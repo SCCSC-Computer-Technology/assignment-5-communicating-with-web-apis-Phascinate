@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Michael-Lee-Lab-5-CPT-206-WebApp.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Michael-Lee-Lab-5-CPT-206-API\\Michael-Lee-Lab-5-CPT-206-API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

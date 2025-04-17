@@ -1,0 +1,49 @@
+﻿@page "{id:int}"
+@model EditStateModel
+
+<h2>Edit State</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="State.StateID" />
+    <div>
+        <label>Name:</label>
+        <input asp-for="State.StateName" />
+    </div>
+    <div>
+        <label>Capital:</label>
+        <input asp-for="State.StateCapital" />
+    </div>
+    <div>
+        <label>Population:</label>
+        <input asp-for="State.Population" />
+    </div>
+    <div>
+        <label>Flag Description:</label>
+        <input asp-for="State.FlagDescription" />
+    </div>
+    <div>
+        <label>Flower:</label>
+        <input asp-for="State.StateFlower" />
+    </div>
+    <div>
+        <label>Bird:</label>
+        <input asp-for="State.StateBird" />
+    </div>
+    <div>
+        <label>Colors:</label>
+        <input asp-for="State.Colors" />
+    </div>
+    <div>
+        <label>Largest Cities:</label>
+        <input asp-for="State.LargestCities" />
+    </div>
+    <div>
+        <label>Median Income:</label>
+        <input asp-for="State.MedianIncome" type="number" step="0.01" />
+    </div>
+    <div>
+        <label>Computer Jobs %:</label>
+        <input asp-for="State.ComputerJobsPercent" type="number" step="0.01" />
+    </div>
+    <button type="submit">Save</button>
+</form>

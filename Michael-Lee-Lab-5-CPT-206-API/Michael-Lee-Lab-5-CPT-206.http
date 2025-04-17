@@ -1,0 +1,6 @@
+@Michael_Lee_Lab_5_CPT_206_HostAddress = http://localhost:5004
+
+GET {{Michael_Lee_Lab_5_CPT_206_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

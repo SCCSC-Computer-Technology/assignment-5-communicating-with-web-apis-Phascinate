@@ -1,0 +1,33 @@
+﻿@page
+@model StatesPageModel
+
+<h2>States</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Population</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var state in Model.States)
+        {
+        <tr>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@state.StateID">@state.StateName</a>
+            </td>
+            <td>@state.StateCapital</td>
+            <td>@state.Population</td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@state.StateID" style="display:inline">
+                    <button type="submit" onclick="return confirm('Are you sure?');">Delete</button>
+                </form>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="./Create">Create New</a>

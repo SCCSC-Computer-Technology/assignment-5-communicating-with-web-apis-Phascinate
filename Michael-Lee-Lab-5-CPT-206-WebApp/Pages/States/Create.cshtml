@@ -1,0 +1,49 @@
+﻿@page
+@model CreateStateModel
+
+<h2>Create New State</h2>
+
+<form method="post">
+    <div>
+        <label>Name:</label>
+        <input asp-for="NewState.StateName" />
+    </div>
+    <div>
+        <label>Capital:</label>
+        <input asp-for="NewState.StateCapital" />
+    </div>
+    <div>
+        <label>Population:</label>
+        <input asp-for="NewState.Population" />
+    </div>
+    <div>
+        <label>Flag Description:</label>
+        <input asp-for="NewState.FlagDescription" />
+    </div>
+    <div>
+        <label>Flower:</label>
+        <input asp-for="NewState.StateFlower" />
+    </div>
+    <div>
+        <label>Bird:</label>
+        <input asp-for="NewState.StateBird" />
+    </div>
+    <div>
+        <label>Colors:</label>
+        <input asp-for="NewState.Colors" />
+    </div>
+    <div>
+        <label>Largest Cities:</label>
+        <input asp-for="NewState.LargestCities" />
+    </div>
+    <div>
+        <label>Median Income:</label>
+        <input asp-for="NewState.MedianIncome" type="number" step="0.01" />
+    </div>
+    <div>
+        <label>Computer Jobs %:</label>
+        <input asp-for="NewState.ComputerJobsPercent" type="number" step="0.01" />
+    </div>
+
+    <button type="submit">Create</button>
+</form>
